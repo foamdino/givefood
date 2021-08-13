@@ -19,6 +19,6 @@ jobs:
       - name: Install dependencies
         run: |
           ./install_deps
-      - name: Test with pytest
+      - name: Test with nose
         run: |
-          pytest
+          ./run_tests.py givefood.tests
